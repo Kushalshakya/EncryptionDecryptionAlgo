@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption And Decryption Algorithm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="App" class="w-full h-screen text-white flex items-center flex-col">
+        <div class="scaffold text-2xl text-center py-5 w-screen">
+            <h1>
+                Encrypt & Decrypt Messages
+            </h1>
+        </div>
+        <textarea name="userInput" id="userInput" class="text-black p-4 w-2/4 h-2/4 text-xl mt-14 mb-6 text-justify" placeholder='Enter your message' autofocus spellcheck="false" required></textarea>
+        <div class="btn-wrap flex gap-4 my-4">
+            <button id="encryptBtn" class="encryptBtn bg-green-500 py-2 px-8 text-xl hover:bg-green-600">
+                Encrypt
+            </button>
+            <button id="decryptBtn" class="decryptBtn bg-red-500 py-2 px-8 text-xl hover:bg-red-600">
+                Decrypt
+            </button>
+        </div>
+        <div class="key flex my-4 w-1/2 justify-center">
+            <input type="text" id="copyText" class="text-black px-2 w-1/2" spellcheck="false" autocomplete="false" readonly>
+            <button class="bg-blue-500 hover:bg-blue-600 px-4 py-3 uppercase" id="showBtn">Copy</button>
+        </div>
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>

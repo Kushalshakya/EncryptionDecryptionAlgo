@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+    outline: none !important;
+}
+#App{
+    background-color: #424874;
+}
+.scaffold{
+    background-color: #A6B1E1;
+}
+textarea{
+    resize: none !important;
+}
+
+@media (max-width: 768px){
+    #App{
+        min-height: 100vh;
+        height: auto !important;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    textarea{
+        width: 90% !important;
+    }
+    .key{
+        width: 90% !important;
+    }
+    #copyText{
+        width: 90% !important;
+    }
+}
